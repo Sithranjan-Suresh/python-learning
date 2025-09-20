@@ -10,6 +10,7 @@ The repo is organized into folders for clarity:
 - **file_io/**  
 - **games_utensils/**
 - **iterators_generators/**
+- **numpy/**
 - **oop/**
 - **python_features/** 
 

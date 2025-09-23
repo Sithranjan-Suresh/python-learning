@@ -1,36 +1,62 @@
-import numpy as np
-#Problem 1: Create a 1D NumPy array of numbers from 10 to 50 (inclusive), then reverse it.
+import numpy as np  
 
-arr_one = np.arange(10,51)
-print(arr_one)
-arr_one_reversed = arr_one[::-1]
-print(arr_one_reversed)
+# ---------------------------------------------------
+# Problem 1: Create a 1D NumPy array of numbers from 10 to 50 (inclusive), 
+# then reverse it.
+# ---------------------------------------------------
 
-'''Problem 2: Create a 5 x 5 array filled with random integers between 1 and 100.
-Print its shape, size, and data type.
-Find the min, max, and mean.'''
+# Create array with numbers from 10 to 50
+arr_one = np.arange(10, 51)  
+print("Original array (10 to 50):", arr_one)
 
-arr_two = np.random.randint(1,100,size=(5,5))
-print(arr_two)
-print(arr_two.shape)
-print(arr_two.size)
-print(arr_two.dtype)
-print(arr_two.min())
-print(arr_two.max())
-print(arr_two.mean())
+# Reverse the array using slicing
+arr_one_reversed = arr_one[::-1]  
+print("Reversed array:", arr_one_reversed)
 
-#Given an array of 20 random integers between 1 and 50, select only the even numbers.
 
-arr_three = np.random.randint(1,50,size=(1,20))
+# ---------------------------------------------------
+# Problem 2: Create a 5x5 array filled with random integers between 1 and 100.
+# Then print its shape, size, data type, min, max, and mean.
+# ---------------------------------------------------
 
-even = (arr_three%2)==0
-print(arr_three)
-print(even)
-print(arr_three[even])
+arr_two = np.random.randint(1, 100, size=(5, 5))  
+print("\n5x5 Random Array:\n", arr_two)
 
-#Create a 4×4 identity matrix, then add 5 to all elements in the second row only (without loops).
+# Array properties
+print("Shape:", arr_two.shape)  
+print("Size:", arr_two.size)    
+print("Data type:", arr_two.dtype)  
 
-arr_four = np.random.randint(0, 10, size=(4, 4))
-print(arr_four)
-arr_four[1] = arr_four[1]+5
-print(arr_four)
+# Array statistics
+print("Minimum value:", arr_two.min())  
+print("Maximum value:", arr_two.max())  
+print("Mean value:", arr_two.mean())  
+
+
+# ---------------------------------------------------
+# Problem 3: Given an array of 20 random integers between 1 and 50, 
+# select only the even numbers.
+# ---------------------------------------------------
+
+arr_three = np.random.randint(1, 50, size=20)  
+print("\nRandom Array of 20 numbers:", arr_three)
+
+# Boolean mask for even numbers
+even_mask = (arr_three % 2 == 0)  
+print("Even mask:", even_mask)  
+
+# Select only even numbers
+print("Even numbers:", arr_three[even_mask])  
+
+
+# ---------------------------------------------------
+# Problem 4: Create a 4×4 random integer matrix (0–9).
+# Add 5 to all elements in the second row only (without loops).
+# ---------------------------------------------------
+
+arr_four = np.random.randint(0, 10, size=(4, 4))  
+print("\nOriginal 4x4 Array:\n", arr_four)
+
+# Add 5 to the entire second row (index 1)
+arr_four[1] += 5  
+print("Modified 4x4 Array (second row +5):\n", arr_four)

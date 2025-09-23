@@ -12,6 +12,12 @@ Find the min, max, and mean.'''
 
 arr_two = np.random.randint(1,100,size=(5,5))
 print(arr_two)
+print(arr_two.shape)
+print(arr_two.size)
+print(arr_two.dtype)
+print(arr_two.min())
+print(arr_two.max())
+print(arr_two.mean())
 
 #Given an array of 20 random integers between 1 and 50, select only the even numbers.
 

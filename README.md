@@ -21,6 +21,8 @@ Some scripts rely on input files. Here’s where they’re used:
 - `input.txt` → Text file reading/writing practice  
 - `input.json` → JSON parsing practice  
 - `input.csv` → CSV handling practice  
+- `movies.csv`→ Pandas practice
+- `bengaluru_house_prices.csv`→ Pandas practice
 
 ## Purpose
 The goal of this repo is to:  

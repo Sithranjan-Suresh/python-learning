@@ -1,5 +1,5 @@
 import pandas as pd
-df = pd.read_csv("pandas\movies.csv")
+df = pd.read_csv("pandas/movies.csv")
 print(df.head(4))
 print(df.tail(4))
 print(df.sample(3))

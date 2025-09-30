@@ -23,6 +23,8 @@ Some scripts rely on input files. Here’s where they’re used:
 - `input.csv` → CSV handling practice  
 - `movies.csv`→ Pandas practice
 - `bengaluru_house_prices.csv`→ Pandas practice
+- `movies_data.csv`→ Pandas practice
+- `stock_data.csv`→ Pandas practice
 
 ## Purpose
 The goal of this repo is to:  
